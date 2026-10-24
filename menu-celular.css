@@ -1,0 +1,49 @@
+/* ===== JAVASCRIPT — AULA 3: menu do celular =====
+   Cole este bloco no FIM do style.css.
+
+   No celular, os links do menu somem e aparece o botão ☰.
+   O JavaScript liga e desliga a classe "aberto" no <nav>;
+   aqui a gente só diz como o menu fica quando está aberto. */
+
+/* O botão ☰ fica escondido no computador */
+.botao-menu {
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.3rem;
+  background: none;
+  border: 2px solid var(--primaria);
+  border-radius: 10px;
+  color: var(--texto);
+  cursor: pointer;
+}
+
+/* Deixa o menu aberto por cima do conteúdo da página */
+.topo { z-index: 10; }
+
+@media (max-width: 700px) {
+  .botao-menu { display: block; }
+
+  /* Menu fechado: escondido */
+  .topo nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem 1rem;
+    background: var(--superficie);
+    box-shadow: var(--sombra);
+  }
+
+  /* Menu aberto: o JavaScript põe a classe "aberto" */
+  .topo nav.aberto { display: block; }
+
+  .topo nav a {
+    display: block;
+    margin: 0;
+    padding: 0.75rem 0;
+  }
+
+  .topo nav .botao-tema { margin: 0.5rem 0 0; }
+}

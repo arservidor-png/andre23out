@@ -1,0 +1,16 @@
+criar um site pessoal:
+
+1) ficha do meu site;
+2) no claude: cole a ficha e peça... para cria o arquivo rule.md;
+3) crie um pasta no Windows Explorer com nome site pessoal;
+4) no antigravity ide: file>open folder>site pessoal 
+	- nos "..." customization;
+
+	- escolha workspace, abrirá um campo para preenchimento, digite qualquer coisa para nomear o arquivo (por exemplo code-style.md);
+
+	- no code-style.md: cole o texto da ficha do meu site;
+
+	
+	- no chat: cole o prompt; depois executar fase 1
+
+	- após cada resposta do chat: verifique os parametros atendem o que se quer...dê prosseguimento as demais fases.
